@@ -1,11 +1,103 @@
 @import "~bootstrap/scss/bootstrap";
 
 $color-orange: #f98a09;
-.main {
-  background: $color-orange;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+$color-dark: #1b1b1b;
+$color-light: #ffffff;
+$btn-bg-color: #00c8ff;
+
+html, body, main {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.navbar-light {
+  background: rgba(255,255,255,.85);
+}
+
+.navbar-light {
+  .navbar-nav {
+    
+    text-transform: uppercase;
+    
+    .nav-link {
+      font-size: .8125rem;
+      color: $color-dark;
+    }
+    
+    .btn {
+      font-size: 1rem;
+      font-weight: 500;
+      margin: .25rem .5rem;
+      padding: .0625rem .5rem;
+      color: $color-light;
+      background-color: $btn-bg-color; 
+      border-color: $btn-bg-color;
+    }
+  }
+}
+
+.rounded-side {
+  border-radius: .9375rem;
+}
+
+.lead {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+#landing {
+  height: 100%;
+  background-image: url("/images/landing-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#about-us {
+  h1 {
+    font-size: 1.875rem;
+  }
+}
+
+.section-title {
+  color: $color-light;
+  h2 {
+    margin: auto;
+    font-size: 2.25rem;
+  }
+}
+
+.section-content {
+  padding: 2rem 5.625rem 3rem;
+}
+
+#services {
+  .section-title {
+    height: 3.75rem;
+    background-image: url("/images/services-title.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  img {
+    height: 5.25rem;
+    width: 5.25rem;
+  }
+}
+
+#packages {
+  background-image: url("/images/packages-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#testimonials {
+  .section-title {
+    height: 3.75rem;
+    background-image: url("/images/testimonials-title.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }

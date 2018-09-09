@@ -7303,21 +7303,57 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-.main {
-  background: #f98a09;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+html, body, main {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif; }
+
+.navbar-light {
+  background: rgba(255, 255, 255, 0.85); }
+
+.navbar-light .navbar-nav {
+  text-transform: uppercase; }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: .8125rem;
+    color: #1b1b1b; }
+  .navbar-light .navbar-nav .btn {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: .25rem .5rem;
+    padding: .0625rem .5rem;
+    color: #ffffff;
+    background-color: #00c8ff;
+    border-color: #00c8ff; }
+
+.rounded-side {
+  border-radius: .9375rem; }
+
+.lead {
+  font-size: 1.125rem;
+  font-weight: 400; }
+
+#landing {
+  height: 100%;
+  background-image: url("/images/landing-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#about-us h1 {
+  font-size: 1.875rem; }
+
+.section-title {
+  color: #ffffff; }
+  .section-title h2 {
+    margin: auto;
+    font-size: 2.25rem; }
+
+.section-content {
+  padding: 2rem 5rem 3rem; }
+
+#services .section-title {
+  height: 3.75rem;
+  background-image: url("/images/services-title.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
 

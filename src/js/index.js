@@ -1,5 +1,5 @@
 import 'bootstrap';
-
+//import WOW from 'wowjs';
 import style from "../scss/main.scss";
 import LandingBg from '../images/landing-bg.png';
 import ServicesTBg from '../images/services-title.png';
@@ -23,6 +23,34 @@ import Clipped1 from '../images/clipped-bg-1.svg';
 import Clipped2 from '../images/clipped-bg-2.svg';
 
 $(document).ready(function() {
+//  $('body').scrollspy({ target: '#navbar', offset: 70 });
+
+$('.nav-link').click(function(){    
+  let divId = $(this).attr('href');
+   $('html, body').animate({
+    scrollTop: $(divId).offset().top - 51.5
+  }, 200);
+});
+
   console.log("jQuery is working");
 });
 
+
+  const WOW = require('wowjs');
+
+  window.wow = new WOW.WOW({
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         false,       // act on asynchronously loaded content (default is true)
+    /*callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },*/
+    scrollContainer: null // optional scroll container selector, otherwise use window
+  });
+
+  window.wow.init();
+
+console.log('hi', WOW);

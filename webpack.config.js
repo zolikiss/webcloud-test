@@ -56,7 +56,8 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      'window.jQuery': 'jquery'
+      'window.jQuery': 'jquery',
+      //WOW: ['wowjs', 'default'],
     }),
     new HtmlWebPackPlugin({
       template: "./src/index.html",

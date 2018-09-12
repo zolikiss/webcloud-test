@@ -1,4 +1,5 @@
 import 'bootstrap';
+
 import style from "../scss/main.scss";
 import LandingBg from '../images/landing-bg.png';
 import ServicesTBg from '../images/services-title.png';
@@ -17,10 +18,11 @@ import ArrowRight from '../images/arrow-right.svg';
 import Customer1 from '../images/customer.png';
 import CustomerPh1 from '../images/customer-placeholder1.png';
 import CustomerPh2 from '../images/customer-placeholder2.png';
-
 import Stars from '../images/stars.svg';
-
+import Clipped1 from '../images/clipped-bg-1.svg';
+import Clipped2 from '../images/clipped-bg-2.svg';
 
 $(document).ready(function() {
-  console.log("jQuery is working too!");
+  console.log("jQuery is working");
 });
+

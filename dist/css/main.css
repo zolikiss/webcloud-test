@@ -10983,6 +10983,9 @@ body {
 .font-weight-medium {
   font-weight: 500; }
 
+.social-icon {
+  font-size: 1.25rem; }
+
 .btn {
   border-radius: 1.375rem; }
 

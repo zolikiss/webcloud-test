@@ -16,6 +16,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
 
+
 $color-orange: #f98a09;
 $text-color-dark: #1b1b1b;
 $color-light: #ffffff;
@@ -78,6 +79,10 @@ body {
 
 .font-weight-medium {
   font-weight: 500;
+}
+
+.social-icon {
+  font-size: 1.25rem;
 }
 
 .btn {

@@ -22,17 +22,17 @@ import Stars from '../images/stars.svg';
 import Clipped1 from '../images/clipped-bg-1.svg';
 import Clipped2 from '../images/clipped-bg-2.svg';
 
+
 $(document).ready(function() {
-//  $('body').scrollspy({ target: '#navbar', offset: 70 });
 
-$('.nav-link').click(function(){    
-  let divId = $(this).attr('href');
-   $('html, body').animate({
-    scrollTop: $(divId).offset().top - 51.5
-  }, 200);
-});
+  $('.nav-link').click(function(){    
+    let divId = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(divId).offset().top - 51.5
+    }, 200);
+  });
 
-  console.log("jQuery is working");
+  console.log("jQuery loaded");
 });
 
 
@@ -53,4 +53,4 @@ $('.nav-link').click(function(){
 
   window.wow.init();
 
-console.log('hi', WOW);
+console.log('wowjs loaded');

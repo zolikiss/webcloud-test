@@ -10986,6 +10986,9 @@ body {
 .social-icon {
   font-size: 1.25rem; }
 
+.opacity-zero {
+  opacity: 0; }
+
 .btn {
   border-radius: 1.375rem; }
 
@@ -11000,6 +11003,42 @@ body {
     background-color: #00c8ff;
     border-color: #00c8ff;
     border-radius: .9375rem; }
+
+.form-group {
+  position: relative; }
+  .form-group .form-control {
+    background: rgba(255, 255, 255, 0.8); }
+    .form-group .form-control:focus {
+      border-color: #009ee0;
+      -webkit-box-shadow: 0 0 .2rem 0 #00c8ff;
+              box-shadow: 0 0 .2rem 0 #00c8ff; }
+  .form-group .col-form-label {
+    font-size: 1.125rem;
+    font-weight: 500; }
+  .form-group .is-invalid {
+    background-color: #ffd5d9; }
+    .form-group .is-invalid:focus {
+      border-color: #dc3545;
+      -webkit-box-shadow: inset 0 0 0.2rem 0 #dc3545;
+              box-shadow: inset 0 0 0.2rem 0 #dc3545; }
+  .form-group .is-valid {
+    background-color: #91ffac; }
+    .form-group .is-valid:focus {
+      border-color: #28a745;
+      -webkit-box-shadow: inset 0 0 0.2rem 0 #28a745;
+              box-shadow: inset 0 0 0.2rem 0 #28a745; }
+
+.was-validated .form-control:invalid {
+  background-color: #ffd5d9; }
+  .was-validated .form-control:invalid:focus {
+    -webkit-box-shadow: inset 0 0 0.2rem 0 #dc3545;
+            box-shadow: inset 0 0 0.2rem 0 #dc3545; }
+
+.was-validated .form-control:valid {
+  background-color: #91ffac; }
+  .was-validated .form-control:valid:focus {
+    -webkit-box-shadow: inset 0 0 0.2rem 0 #28a745;
+            box-shadow: inset 0 0 0.2rem 0 #28a745; }
 
 #landing {
   height: 100vh;
@@ -11118,11 +11157,6 @@ body {
     background-color: #ffffff;
     border-color: #ffffff;
     color: #009ee0; }
-  #contact-us .form-group .form-control {
-    background: rgba(255, 255, 255, 0.8); }
-  #contact-us label {
-    font-size: 1.125rem;
-    font-weight: 500; }
   #contact-us span {
     font-size: 1.875rem; }
 

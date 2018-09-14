@@ -85,6 +85,12 @@ body {
   font-size: 1.25rem;
 }
 
+.opacity-zero {
+  opacity: 0;
+}
+
+//Bootstrap class modification
+
 .btn {
   border-radius: 1.375rem;
 }
@@ -102,6 +108,52 @@ body {
       background-color: $btn-bg-color; 
       border-color: $btn-bg-color;
       border-radius: .9375rem;
+    }
+  }
+}
+
+.form-group {
+  position: relative;
+  .form-control {
+    background: rgba(255,255,255,.80);
+    &:focus {
+      border-color: #009ee0;
+      box-shadow: 0 0 .2rem 0 #00c8ff;
+    }
+  }
+  .col-form-label {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  .is-invalid {
+    background-color: #ffd5d9;
+    &:focus {
+      border-color: #dc3545;
+      box-shadow: inset 0 0 0.2rem 0 #dc3545;
+    }
+  }
+  .is-valid {
+    background-color: #91ffac;
+    &:focus {
+      border-color: #28a745;
+      box-shadow: inset 0 0 0.2rem 0 #28a745;
+    }
+  }
+}
+
+.was-validated {
+  .form-control{
+    &:invalid {
+      background-color: #ffd5d9;
+      &:focus {
+        box-shadow: inset 0 0 0.2rem 0 #dc3545;
+      }
+    }
+    &:valid {
+      background-color: #91ffac;
+      &:focus {
+        box-shadow: inset 0 0 0.2rem 0 #28a745;
+      }
     }
   }
 }
@@ -181,7 +233,6 @@ body {
 }
 
 #reference {
-
   .btn {
     background-color: #03a9d9;
     border-color: #03a9d9;
@@ -255,15 +306,6 @@ body {
     background-color: $color-light;
     border-color: $color-light;
     color: #009ee0;
-  }
-  .form-group {
-    .form-control {
-      background: rgba(255,255,255,.80);
-    }
-  }
-  label {
-    font-size: 1.125rem;
-    font-weight: 500;
   }
   span {
     font-size: 1.875rem;

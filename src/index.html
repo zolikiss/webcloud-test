@@ -431,46 +431,52 @@
           </h2>
           <p class="my-2">Kérdésed van? Keress fel minket bátran!</p>
         </div>
-        
-        <form class="container mb-5">
-          <div class="row justify-content-center">
-            <div class="mt-5 mt-md-0 col-md-5 col-lg-4 text-left">
-              
-                <div class="form-group mb-0 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
-                  <label class="col-form-label-sm m-0" for="nameInput">Név</label>
-                  <input type="text" class="form-control form-control-sm rounded-0" id="nameInput">
-                </div>
-                <div class="form-group mb-0 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
-                  <label class="col-form-label-sm m-0" for="emailInput">E-mail cím</label>
-                  <input type="email" class="form-control form-control-sm rounded-0" id="emailInput">
-                </div>
-                <div class="form-group mb-0 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
-                  <label class="col-form-label-sm m-0" for="subjectInput">Tárgy</label>
-                  <input type="text" class="form-control form-control-sm rounded-0" id="subjectInput">
-                </div>
-                <div class="form-group mb-0 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
-                  <label class="col-form-label-sm m-0" for="messageTextarea">Üzenet</label>
-                  <textarea class="form-control rounded-0" id="messageTextarea" rows="4"></textarea>
-                </div>
-              
+        <div class="container mb-5">
+          <form id="contact-form" novalidate=""> <!-- method="post" action="" novalidate>-->
+            <div class="row justify-content-center">  
+              <div id="validation-msg" class="col-6 alert alert-success opacity-zero animated" role="alert">
+                  Üzenet elküldve! Köszönjük!
+              </div>
             </div>
-            <div class="mt-5 mt-md-0 text-sm-center offset-md-1 col-md-5 col-lg-4 text-lg-left">
-              <p class="wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
-                <span>Elérhetőségeink:</span>
-                <br/>
-                Tel.: +36 30 / 507-2643
-                <br/>
-                E-mail: <a href="#" class="text-white">info@webclouddesign.hu</a>
-                <br/>
-                Cím: 1037 Budapest Zay utca 1-3.
-                <br/>
-                Facebook: webclouddesign
-                <br/>
-              </p>
-              <button type="submit" class="btn mt-4 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">Árajánlat kérés</button>
+            <div class="row justify-content-center">
+              <div class="mt-5 mt-md-0 col-md-5 col-lg-4 text-left">
+
+                  <div class="form-group mb-0 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+                    <label class="col-form-label-sm m-0" for="nameInput">Név</label>
+                    <input name="name" type="text" class="form-control form-control-sm rounded-0" id="nameInput" required>
+                  </div>
+                  <div class="form-group mb-0 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+                    <label class="col-form-label-sm m-0" for="emailInput">E-mail cím</label>
+                    <input name="email" type="email" class="form-control form-control-sm rounded-0" id="emailInput" example required>
+                  </div>
+                  <div class="form-group mb-0 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+                    <label class="col-form-label-sm m-0" for="subjectInput">Tárgy</label>
+                    <input name="subject" type="text" class="form-control form-control-sm rounded-0" id="subjectInput">
+                  </div>
+                  <div class="form-group mb-0 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+                    <label class="col-form-label-sm m-0" for="messageInput">Üzenet</label>
+                    <textarea name="message" class="form-control rounded-0" id="messageInput" rows="4" required></textarea>
+                  </div>
+                
+              </div>
+              <div class="mt-5 mt-md-0 text-sm-center offset-md-1 col-md-5 col-lg-4 text-lg-left">
+                <p class="wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+                  <span>Elérhetőségeink:</span>
+                  <br/>
+                  Tel.: +36 30 / 507-2643
+                  <br/>
+                  E-mail: <a href="#" class="text-white">info@webclouddesign.hu</a>
+                  <br/>
+                  Cím: 1037 Budapest Zay utca 1-3.
+                  <br/>
+                  Facebook: webclouddesign
+                  <br/>
+                </p>
+                <input type="submit" class="btn mt-4 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s" value="Árajánlat kérés">
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
 

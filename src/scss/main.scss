@@ -1,16 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
 
-/*
-@import "~animate.css/source/_base.css";
-@import "~animate.css/source/sliding_entrances/slideInLeft.css";
-@import "~animate.css/source/sliding_entrances/slideInRight.css";
-@import "~animate.css/source/fading_entrances/fadeIn.css";
-@import "~animate.css/source/fading_entrances/fadeInUp.css";
-@import "~animate.css/source/fading_entrances/fadeInDown.css";
-@import "~animate.css/source/fading_entrances/fadeInLeft.css";
-@import "~animate.css/source/fading_entrances/fadeInRight.css";
-@import "~animate.css/source/attention_seekers/pulse.css";
-*/
 @import "~animate.css/animate.css";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800');
@@ -25,69 +14,6 @@ $footer-bg-color1: #252525;
 $footer-bg-color2: #191919;
 $sticky-bg: #ffd200;
 
-html, body, main {
-  min-height: 100%;
-  font-family: 'Montserrat', sans-serif; 
-}
-
-html { 
-  font-size: 1rem;
-}
-
-body {
-  position: relative; 
-}
-
-/* Custom Css */
-
-
-.section-title {
-  min-height: 3.75rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  h2 {
-    font-size: 2.25rem;
-  }
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.customer-avatar {
-  max-height: 10rem;
-  max-width: 10rem; 
-}
-
-.footer-bg {
-  background-color: $footer-bg-color1;
-}
-  
-.footer-bg-darker {
-  background-color: $footer-bg-color2;
-}
-
-.linea {
-  background-color: rgb(81, 81, 81);
-}
-
-.font-weight-medium {
-  font-weight: 500;
-}
-
-.social-icon {
-  font-size: 1.25rem;
-}
-
-.opacity-zero {
-  opacity: 0;
-}
 
 //Bootstrap class modification
 
@@ -158,6 +84,73 @@ body {
   }
 }
 
+/* Custom css */
+
+html, body, main {
+  min-height: 100%;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+html { 
+  font-size: 1rem;
+}
+
+body {
+  position: relative; 
+}
+
+.section-title {
+  min-height: 3.75rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  h2 {
+    font-size: 2.25rem;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.customer-avatar {
+  max-height: 10rem;
+  max-width: 10rem; 
+}
+
+.footer-bg {
+  background-color: $footer-bg-color1;
+}
+  
+.footer-bg-darker {
+  background-color: $footer-bg-color2;
+}
+
+.footer-divider {
+  background-color: rgb(81, 81, 81);
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.social-icon {
+  font-size: 1.25rem;
+}
+
+.opacity-zero {
+  opacity: 0;
+}
+
+.stars-container {
+  min-height: 1.5rem;
+}
+
 #landing {
   height: 100vh;
   background-image: url("/images/landing-bg.png");
@@ -200,7 +193,6 @@ body {
     max-height: 100%;
     .package-card-title {
       position: relative;
-
       .sticky {
         position: absolute;
         height: 2.2rem;
@@ -208,20 +200,18 @@ body {
         right: 0;
         box-shadow: 0 0 .4rem rgba(0,0,0,.5);
         background-color: $sticky-bg;
-      }
+      }   
     }
     .package-card-body {
       position: relative;
       margin-top: -1rem;
     }
     .bg-layer {
-      
       img {
         filter: drop-shadow(0 0 .4rem rgba(0,0,0,0.75));
       }
     }
     .overlay {
-      
       li {
         line-height: 1.1rem;
       }
@@ -240,16 +230,12 @@ body {
       height: .75rem;
     }
   }
-
   .overlay-box {
-
     position: relative;
-
     img {
       overflow: hidden;
       width: 100%;
     }
-
     .overlay {
       a {
         position: absolute;

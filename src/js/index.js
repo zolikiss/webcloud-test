@@ -26,8 +26,10 @@ $(document).ready(function() {
     let divId = $(this).attr('href');
     $('html, body').animate({
       scrollTop: $(divId).offset().top - 51.5
-    }, 200);
+    }, 1100);
   });
+
+  handleRefBtn();
 
   //Contact form
 
@@ -61,7 +63,7 @@ $(document).ready(function() {
 });
 
 function handleForm() {
-  $('#nameInput').on('change keyup focusout', function() {
+ $('#nameInput').on('change keyup', function() {
     inputFeedback('#nameInput');
   });
   $('#emailInput').on('change keyup', function() {
@@ -98,9 +100,24 @@ function validateEmail(element) {
 
 function messageSent() {
   $('#validation-msg')
-      .removeClass('opacity-zero')
-      .addClass('alert-success')
+      .removeClass('d-none')
       .addClass('fadeIn');
+}
+
+function handleRefBtn() {
+  let counter = 0;
+  $('#reference-btn').on('click', function() {
+    counter++;
+    $('#reference-btn').attr('href', '#more-ref' + counter)
+      .attr('aria-controls', 'more-ref' + counter);
+    if (document.getElementById('more-ref' + (counter + 1)) === null) {
+      setTimeout(function() {
+        $('#reference-btn').animate({opacity: 0}, 750, function() {
+          $('#reference-btn').attr('disabled', 'disabled');
+        });
+      }, 600);
+    }
+  });
 }
 
 //wowjs animations

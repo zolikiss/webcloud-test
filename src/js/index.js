@@ -25,9 +25,11 @@ $(document).ready(function() {
   $('.nav-link').click(function(){    
     let divId = $(this).attr('href');
     $('html, body').animate({
-      scrollTop: $(divId).offset().top - 51.5
+      scrollTop: $(divId).offset().top - 56
     }, 1100);
   });
+
+  //Displays the hidden items of the #reference section 
 
   handleRefBtn();
 
@@ -35,9 +37,9 @@ $(document).ready(function() {
 
   handleForm(); //Dynamically validates the input fields
 
-  $("#contact-form")[0].reset(); //Resets the contact form after reload
+  $('#contact-form')[0].reset(); //Resets the contact form after reload
 
-  $("#contact-form").on("submit", function(event) {
+  $('#contact-form').on('submit', function(event) {
     
     event.preventDefault();
     event.stopPropagation();
@@ -49,8 +51,8 @@ $(document).ready(function() {
       messageSent();
       form.addClass('was-validated');
       $.ajax({
-        type: "POST",
-        url: "",
+        type: 'POST',
+        url: '',
         data: $(this).serialize()
       });
     }

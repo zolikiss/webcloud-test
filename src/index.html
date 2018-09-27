@@ -32,7 +32,7 @@
   <!-- Header with navbar -->
   <header  class="fixed-top navbar-light shadow">
     <div class="container">
-      <nav id="navbar" class="navbar navbar-expand-lg text-uppercase text-dark bd-navbar">
+      <nav id="navbar" class="navbar navbar-expand-lg text-uppercase bd-navbar">
           <a class="col-9 col-sm-6 col-md-4 col-lg-3 navbar-brand d-flex mr-0 mr-md-2" href="#">
             <img class="m-auto" src="./images/logo.png" alt="" />
           </a>
@@ -55,7 +55,7 @@
                 <a class="nav-link" href="#reference">Referenciáink</a>
               </li>
               <li class="nav-item d-flex justify-content-start pl-lg-5">
-                <a class="btn-sm text-white text-center font-weight-medium m-lg-auto" href="#">Belépés</a>
+                <a class="btn-sm color1 text-white text-center font-weight-medium m-lg-auto" href="#">Belépés</a>
               </li>
             </ul>
           </div>  
@@ -216,7 +216,7 @@
 
           <div class="package-card col-12 col-sm-6 col-md-4 my-4 px-md-0 d-flex flex-column align-items-center wow fadeInUp" data-wow-delay="1s" data-wow-duration="1s">
             <div class="package-card-title">
-              <div class="sticky px-4 d-none d-sm-flex align-items-center wow fadeIn" data-wow-delay="3.5s" data-wow-duration="1s">
+              <div class="sticky color2 px-4 d-none d-sm-flex align-items-center wow fadeIn" data-wow-delay="3.5s" data-wow-duration="1s">
                 <p>Népszerű</p>
               </div>
               <div class="bg-layer">
@@ -374,24 +374,6 @@
         </div>
         <div id="more-ref2" class="row justify-content-center text-white collapse">
             <div class="overlay-box col-12 col-sm-6 col-md-3 p-0">
-              <img src="./images/ref4.png" alt="" />
-              <div class="overlay d-flex justify-content-center align-items-center">
-                <p class="lead font-weight-normal">
-                  Lorem ipsum
-                </p>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="overlay-box col-12 col-sm-6 col-md-3 p-0">
-              <img src="./images/ref3.png" alt="" />
-              <div class="overlay d-flex justify-content-center align-items-center">
-                <p class="lead font-weight-normal">
-                  Lorem ipsum
-                </p>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="overlay-box col-12 col-sm-6 col-md-3 p-0">
               <img src="./images/ref2.png" alt="" />
               <div class="overlay d-flex justify-content-center align-items-center">
                 <p class="lead font-weight-normal">
@@ -409,10 +391,28 @@
                 <a href="#"></a>
               </div>
             </div>
+            <div class="overlay-box col-12 col-sm-6 col-md-3 p-0">
+              <img src="./images/ref4.png" alt="" />
+              <div class="overlay d-flex justify-content-center align-items-center">
+                <p class="lead font-weight-normal">
+                  Lorem ipsum
+                </p>
+                <a href="#"></a>
+              </div>
+            </div>
+            <div class="overlay-box col-12 col-sm-6 col-md-3 p-0">
+              <img src="./images/ref3.png" alt="" />
+              <div class="overlay d-flex justify-content-center align-items-center">
+                <p class="lead font-weight-normal">
+                  Lorem ipsum
+                </p>
+                <a href="#"></a>
+              </div>
+            </div>
           </div>
         <div class="row justify-content-center wow fadeIn" data-wow-delay=".5s" data-wow-duration="1s">
           <div class="col-12 col-sm-8 col-md-6 col-lg-4 py-5">
-            <button id="reference-btn" class="btn btn-block font-weight-medium m-0 px-2 text-white align-middle" data-toggle="collapse" href="#more-ref1" role="button" aria-expanded="false" aria-controls="more-ref1">
+            <button id="reference-btn" class="btn btn-block color3 font-weight-medium m-0 px-2 text-white align-middle" data-toggle="collapse" href="#more-ref1" role="button" aria-expanded="false" aria-controls="more-ref1">
               További referenciák 
               <span class="ml-2"><i class="fas fa-angle-down fa-lg"></i></span>
             </button>
@@ -444,13 +444,19 @@
                         <p class="d-none d-md-block text-md-left my-3">„Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quas, eos officia maiores ipsamu ipsum dolores reiciendis ad voluptas, animi obcaecati adiadipisci sapiente mollitia? Autem delectus quod accusamus tempora, aperiam minimma assumenda deasealeniti hic.”</p>
                         <div class="container-fluid">
                           <div class="row justify-content-center my-2">
-                            <a class="col-1 carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                              <span aria-hidden="true"><i class="fas fa-angle-left fa-2x"></i></span>
-                            </a>
-                            <p class="col-4 col-lg-3 my-0 font-weight-medium">Mari Anna</p>
-                            <a class="col-1 carousel-control-next" href="#carousel" role="button" data-slide="next">
-                              <span aria-hidden="true"><i class="fas fa-angle-right fa-2x"></i></span>
-                            </a>
+                            <div class="col-1">
+                              <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                <span aria-hidden="true"><i class="fas fa-angle-left fa-2x"></i></span>
+                              </a>
+                            </div>
+                            <div class="col-6 col-lg-3 d-flex">
+                              <p class="m-auto font-weight-medium">Mari Anna</p>
+                            </div>
+                            <div class="col-1">
+                              <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                <span aria-hidden="true"><i class="fas fa-angle-right fa-2x"></i></span>
+                              </a>
+                            </div>
                           </div>
                           <div class="row align-items-center justify-content-center stars-container">
                             <i class="fas fa-star fa-lg"></i>
@@ -475,13 +481,19 @@
                         <p class="d-none d-md-block text-md-left my-3">„Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quas, eos officia maiores ipsamu ipsum dolores reiciendis ad voluptas, animi obcaecati adiadipisci sapiente mollitia? Autem delectus quod accusamus tempora, aperiam minimma assumenda deasealeniti hic.”</p>
                         <div class="container-fluid">
                           <div class="row justify-content-center my-2">
-                            <a class="col-1 carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                              <span aria-hidden="true"><i class="fas fa-angle-left fa-2x"></span>
-                            </a>
-                            <p class="col-4 col-lg-3 my-0 font-weight-medium">A.Z.</p>
-                            <a class="col-1 carousel-control-next" href="#carousel" role="button" data-slide="next">
-                              <span aria-hidden="true"><i class="fas fa-angle-right fa-2x"></span>
-                            </a>
+                            <div class="col-1">
+                              <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                <span aria-hidden="true"><i class="fas fa-angle-left fa-2x"></i></span>
+                              </a>
+                            </div>
+                            <div class="col-6 col-lg-3 d-flex">
+                              <p class="m-auto font-weight-medium">A.Z.</p>
+                            </div>
+                            <div class="col-1">
+                              <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                <span aria-hidden="true"><i class="fas fa-angle-right fa-2x"></i></span>
+                              </a>
+                            </div>
                           </div>
                           <div class="row align-items-center justify-content-center stars-container">
                             <i class="fas fa-star fa-lg"></i>
@@ -506,13 +518,19 @@
                         <p class="d-none d-md-block text-md-left my-3">„Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quas, eos officia maiores ipsamu ipsum dolores reiciendis ad voluptas, animi obcaecati adiadipisci sapiente mollitia? Autem delectus quod accusamus tempora, aperiam minimma assumenda deasealeniti hic.”</p>
                         <div class="container-fluid">
                           <div class="row justify-content-center my-2">
-                            <a class="col-1 carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                              <span aria-hidden="true"><i class="fas fa-angle-left fa-2x"></span>
-                            </a>
-                            <p class="col-4 col-lg-3 my-0 font-weight-medium">Z.A.</p>
-                            <a class="col-1 carousel-control-next" href="#carousel" role="button" data-slide="next">
-                              <span aria-hidden="true"><i class="fas fa-angle-right fa-2x"></span>
-                            </a>
+                            <div class="col-1">
+                              <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                <span aria-hidden="true"><i class="fas fa-angle-left fa-2x"></i></span>
+                              </a>
+                            </div>
+                            <div class="col-6 col-lg-3 d-flex">
+                              <p class="m-auto font-weight-medium">Z.A.</p>
+                            </div>
+                            <div class="col-1">
+                              <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                <span aria-hidden="true"><i class="fas fa-angle-right fa-2x"></i></span>
+                              </a>
+                            </div>
                           </div>
                           <div class="row align-items-center justify-content-center stars-container">
                             <i class="fas fa-star fa-lg"></i>
@@ -551,19 +569,19 @@
         <div class="row justify-content-center">
           <div class="mt-3 mt-md-0 col-12 col-md-6 text-left">
 
-              <div class="form-group mb-2 wow fadeIn" data-wow-duration="2s">
+              <div class="form-group mb-3 wow fadeIn" data-wow-duration="2s">
                 <label class="col-form-label-sm font-weight-medium m-0 p-0" for="nameInput">Név</label>
                 <input name="name" type="text" class="form-control form-control-sm rounded-0" id="nameInput" required>
               </div>
-              <div class="form-group mb-2 wow fadeIn" data-wow-duration="2s">
+              <div class="form-group mb-3 wow fadeIn" data-wow-duration="2s">
                 <label class="col-form-label-sm font-weight-medium m-0 p-0" for="emailInput">E-mail cím</label>
                 <input name="email" type="email" class="form-control form-control-sm rounded-0" id="emailInput" example required>
               </div>
-              <div class="form-group mb-2 wow fadeIn" data-wow-duration="2s">
+              <div class="form-group mb-3 wow fadeIn" data-wow-duration="2s">
                 <label class="col-form-label-sm font-weight-medium m-0 p-0" for="subjectInput">Tárgy</label>
                 <input name="subject" type="text" class="form-control form-control-sm rounded-0" id="subjectInput"  required>
               </div>
-              <div class="form-group mb-2 wow fadeIn" data-wow-duration="2s">
+              <div class="form-group mb-3 wow fadeIn" data-wow-duration="2s">
                 <label class="col-form-label-sm font-weight-medium m-0 p-0" for="messageInput">Üzenet</label>
                 <textarea name="message" class="form-control form-control-sm rounded-0" id="messageInput" rows="4" required></textarea>
               </div>
@@ -578,10 +596,10 @@
                 <br/>
                 Cím: 1037 Budapest Zay utca 1-3.
                 <br/>
-                Facebook: webclouddesign
+                Facebook: <a href="#" class="text-white">webclouddesign</a>
               </p>
             </div>
-            <input type="submit" class="btn btn-block my-5 px-2 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s" value="Árajánlat kérés">
+            <input type="submit" class="btn btn-block color4 my-5 px-2 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s" value="Árajánlat kérés">
           </div>
         </div>
       </form>
@@ -589,13 +607,13 @@
     </section>
     <!-- Follow us section -->
     <section id="follow-us" class="text-white text-center">
-      <div class="section-title d-flex">
+      <div class="section-title color5 d-flex">
         <div class="container m-auto">
           <div class="row justify-content-center align-items-center">
             <div class="col-12 col-lg-9 my-auto py-2 py-lg-0">
               <h3 class="font-weight-medium my-0 wow fadeIn" data-wow-duration="1s">Keress minket a közösségi oldalakon is!</h3>
             </div>
-            <div class="col-8 col-sm-6 col-md-3 d-flex justify-content-around align-items-center py-2 py-lg-0">
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-around align-items-center py-2 py-lg-0">
               <a href="#"><span class="fa-stack social-icon text-white wow fadeIn" data-wow-delay="1s" data-wow-duration="1s">
                   <i class="far fa-circle fa-stack-2x"></i>
                   <i class="fab fa-facebook-f fa-stack-1x"></i>
@@ -617,10 +635,10 @@
   </main>
   <!-- Main ends -->
   <!-- Footer starts -->
-  <footer id="footer" class="text-white text-center container-fluid footer-bg pt-4">
+  <footer id="footer" class="text-white text-center container-fluid color6 pt-4">
     <div class="row justify-content-center">
       <div class="col-12">
-        <img src="./images/footer-logo.png" />
+        <img src="./images/footer-logo.png" alt="" />
       </div>
       <div class="col-12 col-sm-10">
         <p class="lead font-weight-normal mt-4">
@@ -630,7 +648,7 @@
         </p>
       </div>
     </div>
-    <hr class="row my-1 footer-divider" />
+    <hr class="row my-1 color8" />
     <div class="row justify-content-center py-3">
       <p class="col-md-4 col-xl-3 m-0">
         <a href="#" class="text-white">info@webclouddesign.hu</a>
@@ -642,7 +660,7 @@
         1037 Budapest Zay utca 1-3
       </p>
     </div>
-    <div class="row footer-bg-darker py-3">
+    <div class="row color7 py-3">
       <p class="col-md-6 m-auto">Copyright 2018 - Minden jog fenntartva</p>
     </div>
   </footer>
